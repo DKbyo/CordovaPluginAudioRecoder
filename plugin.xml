@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-audio-recorder" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>AudioRecorder</name>
+	<js-module name="AudioRecorder" src="www/AudioRecorder.js">
+		<clobbers target="cordova.plugins.AudioRecorder" />
+	</js-module>
+	
+	<!-- android -->
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="AudioRecorder">
+				<param name="android-package" value="cordova-plugin-audio-recorder.AudioRecorder" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"/>
+		<source-file src="src/com/cordavaplugin/media/AudioRecorder.java" target-dir="src/cordova-plugin-audio-recorder/AudioRecorder" />
+		
+		<config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        </config-file>
+
+	</platform>
+	
+	
+</plugin>
