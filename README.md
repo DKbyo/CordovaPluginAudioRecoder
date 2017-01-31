@@ -13,7 +13,7 @@ function(time, success, error) {
 time -> Time in seconds that the recording is made
 
 success -> CallBack function success
-error   -> CallBack function error
+'error   -> CallBack function error
 
 ###stopRecord
 ```
@@ -23,4 +23,4 @@ function(success, error) {
 ```
 
 success -> CallBack function success
-error   -> CallBack function error
+'error   -> CallBack function error

@@ -69,7 +69,7 @@ public class AudioRecorder extends CordovaPlugin {
 		}
 	}
 
-	
+
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         callback = callbackContext;
@@ -142,7 +142,12 @@ public class AudioRecorder extends CordovaPlugin {
 				}
 
 				audioBytes = outputStream.toByteArray();
-				callback.success(Base64.encodeToString(audioBytes, Base64.DEFAULT));
+				boolean deleted = audioFile.delete();
+				if(deleted){
+					callback.success(Base64.encodeToString(audioBytes, Base64.DEFAULT));
+				}else{
+					callback.error("Error deleting File");
+				}			
 			}else{
 				callback.error("Base64 error, file do not exist");
 			}
