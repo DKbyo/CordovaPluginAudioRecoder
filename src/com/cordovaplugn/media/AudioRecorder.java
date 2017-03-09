@@ -1,4 +1,4 @@
-package cordova-plugin-audio-recorder;
+package com.cordovaplugn.media;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
