@@ -1,6 +1,6 @@
 {
   "name": "AudioRecorder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Plugin to record audio, return a string in base64.",
   "cordova": {
     "id": "cordova-plugin-audio-recorder",
