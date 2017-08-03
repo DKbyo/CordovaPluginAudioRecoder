@@ -13,7 +13,7 @@
 			</feature>
 		</config-file>
 		<config-file parent="/*" target="AndroidManifest.xml"/>
-		<source-file src="src/com/cordavaplugin/media/AudioRecorder.java" target-dir="src/com/cordovaplugn/media/AudioRecorder" />
+		<source-file src="src/com/cordovaplugin/media/AudioRecorder.java" target-dir="src/com/cordovaplugn/media/AudioRecorder" />
 		
 		<config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.RECORD_AUDIO" />
