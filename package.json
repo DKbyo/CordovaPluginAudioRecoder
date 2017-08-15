@@ -1,5 +1,5 @@
 {
-  "name": "AudioRecorderFull",
+  "name": "audio-recorder-full",
   "version": "1.0.0",
   "description": "Plugin to record audio, return a string in base64.",
   "cordova": {
