@@ -1,6 +1,6 @@
 #Cordova Native Audio Plugin
 
-Cordova extension for Native Audio record.
+Cordova extension for Native Audio record for iOS and Android.
 
 ## Integration
 
@@ -24,3 +24,8 @@ function(success, error) {
 
 success -> CallBack function success
 'error   -> CallBack function error
+
+###Based on 
+
+https://github.com/emj365/cordova-plugin-audio-recorder-api
+

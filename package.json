@@ -1,25 +1,27 @@
 {
-  "name": "AudioRecorder",
-  "version": "0.0.5",
+  "name": "AudioRecorderFull",
+  "version": "1.0.0",
   "description": "Plugin to record audio, return a string in base64.",
   "cordova": {
-    "id": "cordova-plugin-audio-recorder",
+    "id": "cordova-plugin-audio-recorder-full",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jordanrsas/CordovaPluginAudioRecoder.git"
+    "url": "git+https://github.com/DKbyo/CordovaPluginAudioRecoder.git"
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "cordova-ios"
   ],
-  "author": "JordanRosas",
-  "license": "ISC",
+  "author": "Danyel Cabello",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jordanrsas/CordovaPluginAudioRecoder/issues"
+    "url": "https://github.com/DKbyo/CordovaPluginAudioRecoder/issues"
   },
-  "homepage": "https://github.com/jordanrsas/CordovaPluginAudioRecoder#readme"
+  "homepage": "https://github.com/DKbyo/CordovaPluginAudioRecoder#readme"
 }

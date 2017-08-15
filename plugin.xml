@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-audio-recorder" version="0.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-	<name>AudioRecorder</name>
+<plugin id="cordova-plugin-audio-recorder-full" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>AudioRecorderFull</name>
 	<js-module name="AudioRecorder" src="www/AudioRecorder.js">
 		<clobbers target="cordova.plugins.AudioRecorder" />
 	</js-module>
@@ -20,6 +20,18 @@
         </config-file>
 
 	</platform>
-	
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+		  <feature name="AudioRecorder">
+		    <param name="ios-package" value="AudioRecorder"/>
+		  </feature>
+		</config-file>
+		<header-file src="src/ios/AudioRecorder.h"/>
+		<source-file src="src/ios/AudioRecorder.m"/>
+		<preference name="MICROPHONE_USAGE_DESCRIPTION" default=" " />
+		<config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+		   <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+		</config-file>
+  </platform>
 	
 </plugin>
